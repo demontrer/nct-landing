@@ -1,0 +1,269 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+//font variables
+$font-stack:    'Lato', sans-serif;
+$primary-color: #333;
+$ms00: 0.618em;
+$ms0: 1em;
+$ms1: 1.5em;
+$ms2: 2.25em;
+$ms3: 3.375em;
+$ms4: 5.063em;
+$ms5: 7.594em;
+$light: 300;
+$normal: 400;
+$heavy: 700;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  font-size: $ms1;
+}
+
+h1 {
+  font-size: $ms3;
+  font-weight: $heavy;
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  max-width: 50%;
+}
+
+
+/* NAV BAR */
+
+.navbar-default {margin-bottom:0;}
+.navbar-brand {
+  float: none;
+  }
+
+.navbar-center
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+  height:100%;
+}
+
+/* INTRO */
+
+#intro {
+    background-image: url(https://www.clearvision-cm.com/wp-content/uploads/2015/02/Atlassian-Software-Services-e1433777118770.jpg);
+    background-size: cover;
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    height: 50vh;
+    text-align: center;
+    color: white;
+}
+
+/* TOOLS */
+#tools {
+  text-align:center;
+}
+
+
+.pattern {
+    background: url('../images/black-pattern.png') repeat fixed;
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+.button {
+  display: inline-block;
+  font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: .8em 1.4em;
+  padding-right: 4.7em;
+  background: #009ed8;
+  border: none;
+  color: white;
+  transition: .2s;
+  &:before, &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    width: 2.8em;
+    content: "\00a0";
+    font-family: 'FontAwesome', sans-serif !important;
+    font-size: 1.2em;
+    text-align: center;
+    transition: .2s;
+  }
+  &:before {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  &:hover {
+    background: #0079a5;
+  }
+  &:active, &:focus {
+    background: #002e3f;
+    outline: none;
+  }
+  min-width: 15em;
+}
+
+.email {
+  background: #FE5F55;
+  &:hover {
+    background: #fe2f22;
+  }
+  &:active, &:focus {
+    background: #b90c01;
+  }
+  &:after {
+    content: "\F054";
+  }
+  &:hover:after {
+    -webkit-animation: bounceright .3s alternate ease infinite;
+    animation: bounceright .3s alternate ease infinite;
+  }
+}
+
+
+
+@-webkit-keyframes bounceright {
+  from {
+    -webkit-transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(3px);
+  }
+}
+
+
+@-webkit-keyframes wiggle {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(30deg);
+  }
+}
+
+
+@keyframes bounceright {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(3px);
+  }
+}
+
+
+@keyframes wiggle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
