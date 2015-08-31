@@ -7,8 +7,12 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 //font variables
-$font-stack:    'Lato', sans-serif;
-$primary-color: #333;
+$font-stack: 'Lato', sans-serif;
+$black: #111111;
+$gray: #AAAAAA;
+$silver: #DDDDDD;
+$red: #FF4136;
+$darkred: #800600;
 $ms00: 0.618em;
 $ms0: 1em;
 $ms1: 1.5em;
@@ -22,14 +26,18 @@ $heavy: 700;
 
 body {
   font: 100% $font-stack;
-  color: $primary-color;
+  color: $black;
   font-size: $ms1;
 }
 
 h1 {
   font-size: $ms3;
   font-weight: $heavy;
+  color: white;
 }
+
+a {color: $darkred;}
+a:hover {color:$gray;}
 
 .Aligner {
   display: flex;
@@ -76,6 +84,8 @@ h1 {
 #tools {
   text-align:center;
 }
+#tools h2 {color: $red; margin-top:0px;}
+#tools h3 {color: $black; font-size:$ms0;}
 
 
 .pattern {
@@ -242,6 +252,10 @@ h1 {
     transform: rotate(30deg);
   }
 }
+
+
+i.fa.fa-chevron-right {margin-left:4px;}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
