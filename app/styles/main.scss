@@ -87,6 +87,16 @@ a:hover {color:$gray;}
 #tools h2 {color: $red; margin-top:0px;}
 #tools h3 {color: $black; font-size:$ms0;}
 
+#tool-slider {
+  background-color: #F5F1F1;
+  color: white;
+}
+
+
+#tool-slider img {
+    max-width: 25vh;
+} 
+
 
 .pattern {
     background: url('../images/black-pattern.png') repeat fixed;
@@ -254,7 +264,13 @@ a:hover {color:$gray;}
 }
 
 
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+
 i.fa.fa-chevron-right {margin-left:4px;}
+
+
 
 
 /* Responsive: Portrait tablets and up */

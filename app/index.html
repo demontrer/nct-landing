@@ -89,8 +89,8 @@
     </div>
    </section>
 
-  <main class="container">
-    <section id="tools">
+  <main>
+    <section id="tools" class="container">
         <div class="row">
           <div class="col-xs-12">
               <h3>THE TOOLS</h3>
@@ -122,8 +122,34 @@
         </div>
       </section>
 
-      <section id="tool-slider">
-        
+      <section id="tool-slider" class="">
+       <div class="banner container">
+            <ul>
+                <li>
+                  <div class="row">
+                    <ul>
+                      <div class="col-sm-3"><li><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/Bitbucket-URL.png"></li></div>
+                      <div class="col-sm-3"><li><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/Crowd-URL.png"></li></div>
+                      <div class="col-sm-3"><li><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/Clover-URL.png"></li></div>
+                      <div class="col-sm-3"><li><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/Confluence-Team-Calendars-URL.png"></li></div>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <ul>
+                      <div class="col-sm-3"><li><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/JIRA-Portfolio-URL.png"></li></div>
+                      <div class="col-sm-3"><li><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/JIRA-Capture-URL.png"></li></div>
+                      <div class="col-sm-3"><li><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/Fisheye-URL.png"></li></div>
+                      <div class="col-sm-3"><li><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/Crucible-URL.png"></li></div>
+                    </ul>
+                  </div>
+                </li>
+            </ul>
+            <a href="#" class="unslider-arrow prev">&larr;</a>
+            <a href="#" class="unslider-arrow next">&rarr;</a>
+        </div>
+
       </section>
 
 
@@ -180,6 +206,7 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
     
+    <script type="text/javascript" src="scripts/unslider.min.js"></script>
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
@@ -193,6 +220,8 @@
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
+
+
     </script>
   </body>
 </html>
