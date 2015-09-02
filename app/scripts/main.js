@@ -1,12 +1,14 @@
 // jshint devel:true
       
-$(function() {
-  $('.banner').unslider({
-    //  Enable keyboard arrows
-    keys: true,               
-    // Enable dot nav
-    dots: true,
-    delay: 7000
-  });
+$(document).ready(function() {
+	$('#myCarousel').carousel({
+	interval: 0
+	})
+    
+    $('#myCarousel').on('slid.bs.carousel', function() {
+    	//alert("slid");
+	});
+    
+    
 });
 
