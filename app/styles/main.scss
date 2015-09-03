@@ -13,6 +13,9 @@ $gray: #AAAAAA;
 $silver: #DDDDDD;
 $red: #FF4136;
 $darkred: #800600;
+$lightblue: rgb(89, 175, 225);
+$darkblue: rgb(32, 80, 129);
+$orange: rgb(238, 179, 93);
 $ms00: 0.618em;
 $ms0: 1em;
 $ms1: 1.5em;
@@ -39,54 +42,32 @@ h1 {
 h2 {margin-top:0px;}
 h3 {text-transform:uppercase;font-size:$ms0;}
 
-a {color: $darkred;}
+a {color: $darkblue;}
 a:hover {color:$gray;}
 
-a.yellow_button {
-    color: #fff !important;
-    font-size: 17px;
-    padding: 11px 20px;
-    display: table-cell;
-    vertical-align: middle;
-    text-decoration: none;
-    font-family: "Calibri",sans-serif;
-    border-radius: 8px;
-    line-height: 15px;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    background-color: #EEB35D;
-    margin: 10px auto;
-    display: table;
-    position: relative;
-    text-align: center;
-    text-shadow: none;
+a.orange_button {
+  color: #fff !important;
+  font-size: 17px;
+  padding: 11px 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: "Calibri",sans-serif;
+  border-radius: 8px;
+  line-height: 15px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: $orange;
+  margin: 10px auto;
+  display: table;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
 }
 
-a.green_button {
-    color: #fff !important;
-    font-size: 17px;
-    padding: 11px 20px;
-    display: table-cell;
-    vertical-align: middle;
-    text-decoration: none;
-    font-family: "Calibri",sans-serif;
-    border-radius: 8px;
-    line-height: 15px;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    background-color: #7ac241;
-    margin: 10px auto;
-    display: table;
-    position: relative;
-    text-align: center;
-    text-shadow: none;
-}
 .Aligner {
   display: flex;
   align-items: center;
@@ -103,29 +84,57 @@ a.green_button {
 .navbar-default {margin-bottom:0; background-color:white;}
 .navbar-brand {
   float: none;
-  }
+}
 
-.navbar-center
-{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    text-align: center;
-    margin: auto;
+.navbar-brand > img {
+  display: inherit;
+  height: 80px;
+}
+.navbar-center {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  margin: auto;
   height:100%;
 }
+
+.dropdown-menu {width:100%;min-width:inherit;margin:0;text-align:center;}
+.navbar-inverse {margin-bottom:0;border-radius: 0;background-color:white;border-color:white;}
+
+.navbar-nav > li > a {font-size:25px; padding-top: 35px; padding-bottom:35px;}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {color:#9d9d9d;}
+.navbar-inverse .navbar-nav > li > a:hover {color:black;}
+
+/* div overlays */
+.pattern {
+  background: url('../images/black-pattern.png') repeat fixed;
+  height: 50vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+.filter {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  padding: $ms3 0;
+}
+
 
 /* INTRO */
 
 #intro {
-    background-image: url(https://www.clearvision-cm.com/wp-content/uploads/2015/02/Atlassian-Software-Services-e1433777118770.jpg);
-    background-size: cover;
-    background-position: 80% 50%;
-    background-repeat: no-repeat;
-    height: 50vh;
-    text-align: center;
-    color: white;
+  background-image: url(https://www.clearvision-cm.com/wp-content/uploads/2015/02/Atlassian-Software-Services-e1433777118770.jpg);
+  background-size: cover;
+  background-position: 80% 50%;
+  background-repeat: no-repeat;
+  height: 50vh;
+  text-align: center;
+  color: white;
 }
 
 /* TOOLS */
@@ -133,8 +142,8 @@ a.green_button {
   text-align:center;
   margin: 2em auto;
 }
-#tools h2 {color: $red; margin-top:0px;}
-#tools h3 {color: $black; font-size:$ms0;}
+#tools h2 {color: $darkblue; margin-top:0px;}
+#tools h3 {color: $lightblue; font-size:$ms0;}
 
 #tool-slider {
   background-color: #F5F1F1;
@@ -143,22 +152,13 @@ a.green_button {
 }
 
 
-
-.pattern {
-    background: url('../images/black-pattern.png') repeat fixed;
-    height: 50vh;
-    width: 100%;
-    background-color: rgba(0,0,0,0.3);
-}
-
 #training {
-  background-color: $red;
+  background-color: $lightblue;
   text-align: center;
   color: white;
-  padding: $ms4 0;
+  padding: $ms3 0;
 }
-
-
+#training h3 {color:$darkblue;}
 #training img {
   width: 50%;
 }
@@ -166,14 +166,41 @@ a.green_button {
 #t-intro {margin-bottom:$ms3;}
 
 #consult {
-    background-image: url(https://www.clearvision-cm.com/wp-content/uploads/2015/07/bag-and-hands.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    text-align: center;
-    color: white;
-    padding: $ms5 0;
+  background-image: url(https://www.clearvision-cm.com/wp-content/uploads/2015/07/bag-and-hands.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
 }
+
+#licenses {
+  background-color: $lightblue;
+  text-align: center;
+  color: white;
+  padding: $ms3 0;
+}
+
+#licenses h3 {color:$darkblue;}
+#licenses h2 {font-size:$ms1;}
+
+
+#learn-more {
+  background-image: url(https://www.clearvision-cm.com/wp-content/uploads/2015/07/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+}
+
+#support {
+  text-align: center;
+  color: white;
+  padding: $ms3 0;
+  background-color: $lightblue;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -188,6 +215,7 @@ a.green_button {
 .footer {
   padding-left: 15px;
   padding-right: 15px;
+  text-align:center;
 }
 
 /* Custom page header */
@@ -271,12 +299,12 @@ a.green_button {
 }
 
 .email {
-  background: #FE5F55;
+  background: $lightblue;
   &:hover {
-    background: #fe2f22;
+    background: $darkblue;
   }
   &:active, &:focus {
-    background: #b90c01;
+    background: $darkblue;
   }
   &:after {
     content: "\F054";
@@ -374,11 +402,17 @@ i.fa.fa-chevron-right {margin-left:4px;}
   width:5%;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar {background-color: gray !important;}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border-color:lightgray;}
+.dropdown-menu > li > a:hover {background-color: lightgray;}
+
 @media screen and (max-width: 768px) {
   h1 {font-size:$ms2;}
   #tool-slider img {max-width:200px;}
   #training {padding: $ms2 0;}
   #training img {max-width:200px;}
+  .navbar-nav > li > a {font-size:18px;padding-top:18px;padding-bottom:18px;}
+  .navbar-brand > img {height:50px; width:inherit;}
 }
 
 /* Responsive: Portrait tablets and up */
