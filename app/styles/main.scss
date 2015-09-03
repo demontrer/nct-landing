@@ -100,7 +100,7 @@ a.green_button {
 
 /* NAV BAR */
 
-.navbar-default {margin-bottom:0;}
+.navbar-default {margin-bottom:0; background-color:white;}
 .navbar-brand {
   float: none;
   }
@@ -368,6 +368,13 @@ i.fa.fa-chevron-right {margin-left:4px;}
 .carousel-control {
   padding-top:3.75%;
   width:5%;
+}
+
+@media screen and (max-width: 768px) {
+  #training {padding: 1em 0;}
+  #training img {
+    max-width:150px;
+  }
 }
 
 /* Responsive: Portrait tablets and up */
