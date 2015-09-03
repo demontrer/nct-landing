@@ -155,12 +155,15 @@ a.green_button {
   background-color: $red;
   text-align: center;
   color: white;
+  padding: $ms4 0;
 }
 
 
 #training img {
   width: 50%;
 }
+
+#t-intro {margin-bottom:$ms3;}
 
 #consult {
     background-image: url(https://www.clearvision-cm.com/wp-content/uploads/2015/07/bag-and-hands.jpg);
@@ -169,6 +172,7 @@ a.green_button {
     background-repeat: no-repeat;
     text-align: center;
     color: white;
+    padding: $ms5 0;
 }
 .browsehappy {
   margin: 0.2em 0;
@@ -371,10 +375,10 @@ i.fa.fa-chevron-right {margin-left:4px;}
 }
 
 @media screen and (max-width: 768px) {
-  #training {padding: 1em 0;}
-  #training img {
-    max-width:150px;
-  }
+  h1 {font-size:$ms2;}
+  #tool-slider img {max-width:200px;}
+  #training {padding: $ms2 0;}
+  #training img {max-width:200px;}
 }
 
 /* Responsive: Portrait tablets and up */
@@ -400,4 +404,5 @@ i.fa.fa-chevron-right {margin-left:4px;}
   .jumbotron {
     border-bottom: 0;
   }
+  #training img {max-width:300px;}
 }
