@@ -4,17 +4,15 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
-@import url(http://fonts.googleapis.com/css?family=Lato);
+//@import url(http://fonts.googleapis.com/css?family=Lato);
 
 //font variables
-$font-stack: 'Lato', sans-serif;
+$font-stack: sans-serif;
 $black: #111111;
 $gray: #AAAAAA;
 $silver: #DDDDDD;
 $red: #FF4136;
 $darkred: #800600;
-$lightblue: rgb(89, 175, 225);
-$darkblue: rgb(32, 80, 129);
 $orange: rgb(238, 179, 93);
 $ms00: 0.618em;
 $ms0: 1em;
@@ -42,7 +40,7 @@ h1 {
 h2 {margin-top:0px;}
 h3 {text-transform:uppercase;font-size:$ms0;}
 
-a {color: $darkblue;}
+a {color: $darkred;}
 a:hover {color:$gray;}
 
 a.orange_button {
@@ -142,8 +140,8 @@ a.orange_button {
   text-align:center;
   margin: 2em auto;
 }
-#tools h2 {color: $darkblue; margin-top:0px;}
-#tools h3 {color: $lightblue; font-size:$ms0;}
+#tools h2 {color: $red; margin-top:0px;}
+#tools h3 {color: $darkred; font-size:$ms0;}
 
 #tool-slider {
   background-color: #F5F1F1;
@@ -153,12 +151,12 @@ a.orange_button {
 
 
 #training {
-  background-color: $lightblue;
+  background-color: $red;
   text-align: center;
   color: white;
   padding: $ms3 0;
 }
-#training h3 {color:$darkblue;}
+#training h3 {color:$darkred;}
 #training img {
   width: 50%;
 }
@@ -175,13 +173,13 @@ a.orange_button {
 }
 
 #licenses {
-  background-color: $lightblue;
+  background-color: $red;
   text-align: center;
   color: white;
   padding: $ms3 0;
 }
 
-#licenses h3 {color:$darkblue;}
+#licenses h3 {color:$darkred;}
 #licenses h2 {font-size:$ms1;}
 
 
@@ -194,11 +192,13 @@ a.orange_button {
   color: white;
 }
 
+#learn-more img {padding-bottom:10px;}
+
 #support {
   text-align: center;
   color: white;
   padding: $ms3 0;
-  background-color: $lightblue;
+  background-color: $red;
 }
 
 .browsehappy {
@@ -299,12 +299,12 @@ a.orange_button {
 }
 
 .email {
-  background: $lightblue;
+  background: $red;
   &:hover {
-    background: $darkblue;
+    background: $darkred;
   }
   &:active, &:focus {
-    background: $darkblue;
+    background: $darkred;
   }
   &:after {
     content: "\F054";
@@ -405,11 +405,11 @@ i.fa.fa-chevron-right {margin-left:4px;}
 .navbar-inverse .navbar-toggle .icon-bar {background-color: gray !important;}
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border-color:lightgray;}
 .dropdown-menu > li > a:hover {background-color: lightgray;}
-
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {background-color:$silver;}
 @media screen and (max-width: 768px) {
   h1 {font-size:$ms2;}
   #tool-slider img {max-width:200px;}
-  #training {padding: $ms2 0;}
+  #training {padding-top: $ms1;padding-bottom:$ms2;}
   #training img {max-width:200px;}
   .navbar-nav > li > a {font-size:18px;padding-top:18px;padding-bottom:18px;}
   .navbar-brand > img {height:50px; width:inherit;}
