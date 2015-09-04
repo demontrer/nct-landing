@@ -1,14 +1,14 @@
 // jshint devel:true
       
-$(document).ready(function() {
-	$('#myCarousel').carousel({
-	interval: 0
-	})
-    
-    $('#myCarousel').on('slid.bs.carousel', function() {
-    	//alert("slid");
-	});
-    
-    
+$(function() {
+  $('.banner').unslider({
+    //  Enable keyboard arrows
+    keys: true,               
+    // Enable dot nav
+    dots: true,
+    delay: 7000
+  });
 });
 
+/* smooth scroll */ 
+smoothScroll.init();
