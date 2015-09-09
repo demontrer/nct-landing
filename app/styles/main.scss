@@ -105,7 +105,8 @@ a.orange_button:hover {opacity:0.8;}
 
 .navbar-brand > img {
   display: inherit;
-  height: 80px;
+  height: 70px;
+  margin: 10px auto;
 }
 .navbar-center {
   position: absolute;
@@ -145,7 +146,12 @@ a.orange_button:hover {opacity:0.8;}
 /* INTRO */
 
 #intro {
-  background-image: url(https://www.clearvision-cm.com/wp-content/uploads/2015/02/Atlassian-Software-Services-e1433777118770.jpg);
+
+  background:       linear-gradient(
+      rgba(0, 200, 255, 0.45), 
+      rgba(0, 149, 200, 0.45)
+    ),url('../images/cloud.jpg');
+
   background-size: cover;
   background-position: 80% 50%;
   background-repeat: no-repeat;
@@ -161,6 +167,11 @@ a.orange_button:hover {opacity:0.8;}
 }
 #tools h2 {color: $lightblue; margin-top:0px;}
 #tools h3 {color: $darkblue; font-size:$ms0;}
+
+#tools img {
+    height: 3em;
+}
+
 
 #tool-slider {
   background-color: #F5F1F1;
@@ -178,13 +189,16 @@ a.orange_button:hover {opacity:0.8;}
 #training h3 {color:$darkblue;}
 #training img {
   width: 50%;
+  margin-bottom: 1em;
 }
 
 #t-intro {margin-bottom:$ms3;}
 
 #consult {
-  background-image: url(https://www.clearvision-cm.com/wp-content/uploads/2015/07/bag-and-hands.jpg);
-  background-size: cover;
+ background:  linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 200, 255, 0.45)
+    ),url('../images/typing2.jpeg');   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   text-align: center;
@@ -204,7 +218,10 @@ a.orange_button:hover {opacity:0.8;}
 #licenses i {font-size:$ms3;padding-bottom:10px;}
 
 #learn-more {
-  background-image: url(https://www.clearvision-cm.com/wp-content/uploads/2015/07/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg);
+  background:  linear-gradient(
+      rgba(0, 200, 255, 0.45), 
+      rgba(0, 0, 0, 0.6)
+    ),url('../images/books.jpeg');  
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -427,13 +444,14 @@ i.fa-life-ring {font-size:$ms3;}
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border-color:lightgray;}
 .dropdown-menu > li > a:hover {background-color: lightgray;}
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {background-color:$silver;}
-@media screen and (max-width: 768px) {
+@media screen and (max-width:550px) {h1 {font-size:$ms1;}}
+@media only screen and (min-width: 550px) and (max-width:768px) {
   h1 {font-size:$ms2;}
   #tool-slider img {max-width:200px;}
   #training {padding-top: $ms1;padding-bottom:$ms2;}
   #training img {max-width:200px;}
   .navbar-nav > li > a {font-size:18px;padding-top:18px;padding-bottom:18px;}
-  .navbar-brand > img {height:50px; width:inherit;}
+  .navbar-brand > img {height:40px; width:inherit;}
 }
 
 /* Responsive: Portrait tablets and up */
@@ -460,4 +478,8 @@ i.fa-life-ring {font-size:$ms3;}
     border-bottom: 0;
   }
   #training img {max-width:300px;}
+}
+
+@media screen and (min-width: 1300px) {
+  #intro h1 {font-size:$ms4;}
 }
