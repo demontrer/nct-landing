@@ -28,47 +28,46 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
   
-<nav class="navbar navbar-inverse" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
-    </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <img id="brand" class="hidden-xs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" src="images/logo.png">
+        <a class="navbar-brand visible-xs" href="#"><img class="navbar-toggle visible-xs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" src="images/logo.png"></a>
+      </div>
       
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://nctonline.com/company/overview">About</a></li>
-        <li><a href="http://nctonline.com/services">Services</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a data-scroll href="#tools">Tools</a></li>
-            <li><a data-scroll href="#training">Training</a></li>
-            <li><a data-scroll href="#consult">Consult</a></li>
-            <li><a data-scroll href="#licenses">License</a></li>
-            <li><a data-scroll href="#support">Support</a></li>
-            <li class="divider"></li>
-            <li><a data-scroll href="#contact">Contact</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div>
-</nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://nctonline.com/company/overview">About</a></li>
+          <li><a href="http://nctonline.com/services">Services</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a data-scroll href="#tools">Tools</a></li>
+              <li><a data-scroll href="#training">Training</a></li>
+              <li><a data-scroll href="#consult">Consult</a></li>
+              <li><a data-scroll href="#licenses">License</a></li>
+              <li><a data-scroll href="#support">Support</a></li>
+              <li class="divider"></li>
+              <li><a data-scroll href="#contact">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+   </nav>
+
    <section id="intro">
     <div class="pattern Aligner">
       <div class="Aligner-item">
         <h1>Certified Atlassian Experts</h1>
         <p>Software to plan, collaborate, code, and service. Built for teams.</p>
-        <br><button class="button  email">Learn More</button>
+        <br><button href="" class="button  email hidden-xs">Learn More</button>
+        <div class="visible-xs center-block">
+          <a data-scroll href="#tools" style="color:white;font-size:2em;"><i class="fa fa-chevron-down"></i></a>
+        </div>
       </div>
     </div>
    </section>
@@ -116,13 +115,13 @@
                         <div class="item active">
                             <div class="row">
                                 <div class="col-sm-2"></div>
-                                <div class="col-sm-2 col-xs-6"><a href="#x"><img src="images/bitbucket2.png" alt="Image" class="img-responsive"></a>
+                                <div class="col-sm-2 col-xs-6"><a href="http://atlassian.com"><img src="images/bitbucket2.png" alt="Image" class="img-responsive"></a>
                                 </div>
-                                <div class="col-sm-2 col-xs-6"><a href="#x"><img src="images/crowd.png" alt="Image" class="img-responsive"></a>
+                                <div class="col-sm-2 col-xs-6"><a href="http://atlassian.com"><img src="images/crowd.png" alt="Image" class="img-responsive"></a>
                                 </div>
-                                <div class="col-sm-2 col-xs-6"><a href="#x"><img src="images/clover.png" alt="Image" class="img-responsive"></a>
+                                <div class="col-sm-2 col-xs-6"><a href="http://atlassian.com"><img src="images/clover.png" alt="Image" class="img-responsive"></a>
                                 </div>
-                                <div class="col-sm-2 col-xs-6"><a href="#x"><img src="images/calendars.png" alt="Image" class="img-responsive"></a>
+                                <div class="col-sm-2 col-xs-6"><a href="http://atlassian.com"><img src="images/calendars.png" alt="Image" class="img-responsive"></a>
                                 </div>
                                 <div class="col-sm-2"></div>
                             </div>
@@ -132,13 +131,13 @@
                         <div class="item">
                             <div class="row">
                                 <div class="col-sm-2"></div>
-                                <div class="col-sm-2 col-xs-6"><a href="#x col-xs-6" class="thumbnail"><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/JIRA-Portfolio-URL.png" alt="Image" class="img-responsive"></a>
+                                <div class="col-sm-2 col-xs-6"><a href="http://atlassian.com col-xs-6" class="thumbnail"><img src="images/JIRA-Portfolio-URL.png" alt="Image" class="img-responsive"></a>
                                 </div>
-                                <div class="col-sm-2 col-xs-6"><a href="#x" class="thumbnail"><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/JIRA-Capture-URL.png" alt="Image" class="img-responsive"></a>
+                                <div class="col-sm-2 col-xs-6"><a href="http://atlassian.com" class="thumbnail"><img src="images/JIRA-Capture-URL.png" alt="Image" class="img-responsive"></a>
                                 </div>
-                                <div class="col-sm-2 col-xs-6"><a href="#x" class="thumbnail"><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/Fisheye-URL.png" alt="Image" class="img-responsive"></a>
+                                <div class="col-sm-2 col-xs-6"><a href="http://atlassian.com" class="thumbnail"><img src="images/Fisheye-URL.png" alt="Image" class="img-responsive"></a>
                                 </div>
-                                <div class="col-sm-2 col-xs-6"><a href="#x" class="thumbnail"><img src="https://www.clearvision-cm.com/wp-content/uploads/2015/03/Crucible-URL.png" alt="Image" class="img-responsive"></a>
+                                <div class="col-sm-2 col-xs-6"><a href="http://atlassian.com" class="thumbnail"><img src="images/Crucible-URL.png" alt="Image" class="img-responsive"></a>
                                 </div>
                                 <div class="col-sm-2"></div>
                             </div>
@@ -154,7 +153,7 @@
                 <!--/myCarousel-->
             </div>
             <!--/well-->
-</div>
+          </div>
         </div>
       </section>
 
@@ -166,7 +165,6 @@
               <h2>Learn JIRA, Confluence, Stash and more.</h2>
               <p>Let us guide you through the entire Atlassian software suite.</p>
               <br>
-              <a href="" class=" orange_button magic_button_right_no dont_force_text_center magic_center " style=" float: none; font-size: 17px; line-height: 17px;">All Atlassian courses</a>
             </div>
           </div>
           <div class="row">
@@ -205,7 +203,7 @@
                 <h3>CONSULTANCY</h3>
                 <h2>Get your team JIRA, Confluence, Stash and more.</h2>
                 <p>We'll curate the perfect package that will allow your team to get more done.</p>
-                <a href="" target="" class="orange_button magic_button_right_no   " style=" float: none; font-size: 17px; line-height: 17px;">Learn more</a>
+                <a data-scroll href="#licenses" style="color:white;font-size:2em;"><i class="fa fa-chevron-down"></i></a>
               </div>
             </div>
           </div>
@@ -221,7 +219,7 @@
               <p>We'll be with you every step of the way as your personal Atlassian ambassador.</p>
             </div>
           </div>
-          <div class="row">
+          <div class="row hidden-xs">
               <div class="col-md-3 col-xs-6">
                 <i class="fa fa-money"></i>
                 <h4>Competitive pricing</h4>
@@ -248,20 +246,20 @@
             <h2>Recommended reading</h2>
              <div class="row">
               <div class="col-md-4">
-                <img src="images/git.svg">
+                <img src="images/git_red.svg">
                 <p>Sharpen your skills with Git tutorials and tips.
                 </p>
                 <p><a href="https://www.atlassian.com/git/">Learn Git<i class="fa fa-chevron-right"></i></a></p>
               </div>
               <div class="col-md-4">
-                <img src="images/agile.svg">
+                <img src="images/agile_red.svg">
                 <p>
               A no-nonsense guide to Agile development.
                 </p>
                 <p><a href="https://www.atlassian.com/agile">Learn Agile<i class="fa fa-chevron-right"></i></a></p>
               </div>
               <div class="col-md-4">
-                <img src="images/helpdesk.svg">
+                <img src="images/helpdesk_red.svg">
                 <p>
                   Guide to IT and service management.
                 </p>
@@ -275,9 +273,9 @@
       <section id="support">
         <div class="container">
           <div class="row">
-            <i class="fa fa-plus-circle"></i>
+            <i style="font-size:6.618em;" class="fa fa-mobile"></i>
             <h1>Get in touch!</h1><br>
-            <a href="" class=" orange_button magic_button_right_no dont_force_text_center magic_center " style=" float: none; font-size: 17px; line-height: 17px;">Contact Us</a>
+            <a href="tel:443-445-2128" class=" orange_button magic_button_right_no dont_force_text_center magic_center " style=" float: none; font-size: 17px; line-height: 17px;">Call Us</a>
           </div>
         </div>
       </section>
@@ -328,6 +326,8 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
 
+      /* smooth scroll */ 
+      smoothScroll.init();
 
     </script>
   </body>

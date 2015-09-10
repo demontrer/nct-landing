@@ -10,5 +10,3 @@ $(function() {
   });
 });
 
-/* smooth scroll */ 
-smoothScroll.init();
