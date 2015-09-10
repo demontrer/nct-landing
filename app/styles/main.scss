@@ -132,7 +132,7 @@ a.orange_button:hover {opacity:0.8;}
 /* div overlays */
 .pattern {
   background: url('../images/black-pattern.png') repeat fixed;
-  height: 50vh;
+  height: 65vh;
   width: 100%;
 }
 
@@ -157,7 +157,7 @@ a.orange_button:hover {opacity:0.8;}
   background-size: cover;
   background-position: 80% 50%;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 65vh;
   text-align: center;
   color: white;
 }
@@ -445,8 +445,9 @@ i.fa-plus-circle {font-size:$ms3;}
 .dropdown-menu > li > a:hover {background-color: lightgray;}
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {background-color:$silver;}
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:600px) {
   #training img {width:25%;}
+  h1 {font-size:$ms2;}
 }
 
 
@@ -462,7 +463,6 @@ i.fa-plus-circle {font-size:$ms3;}
   #training img {width:25%;}
   #tool-slider img {max-width:200px;}
   #learn-more img {width:25%;}
-
 }
 
 
